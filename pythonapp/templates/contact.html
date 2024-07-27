@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+{%load static%}
+
+<section id="form-section">
+    <div class="form-container">
+      <form action="" method="post">
+        <h2 class="text-center mb-4">CONTACTO</h2>
+        <div class="mb-3">
+          <label for="form-input-nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="form-input-nombre" />
+        </div>
+        <div class="mb-3">
+          <label for="form-input-asunto" class="form-label">Asunto</label>
+          <input type="text" class="form-control" id="form-input-asunto" />
+        </div>
+        <div class="mb-3">
+          <label for="form-textarea-mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="form-textarea-mensaje" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Consulte por nuestras promociones y descuentos" rows="3"></textarea>
+        </div>
+        <div class="mb-3 text-center">
+          <button id="enviarFormulario" type="submit" class="btn btn-lg bg-viajes text-white mb-3 border-0 bg-opacity-75">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  {% endblock %}
